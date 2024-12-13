@@ -7,7 +7,7 @@ export const TitleModalUser = (props) => {
 
 export const TitlePage = (props) => {
     return(
-        <h1 className="font-nunito-bold text-[#142937] text-[20px] ">{props.children}</h1>
+        <h1 className="font-nunito-bold text-[#142937] text-[22px] ">{props.children}</h1>
     )
 }
 

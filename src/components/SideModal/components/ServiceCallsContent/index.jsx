@@ -88,7 +88,7 @@ export default function ServiceCallsContent({ connection, handleCardSelection })
                         onSearch={setSearchedText}
                     />
                 </div>
-                <div className="flex flex-col gap-3 mt-4 overflow-y-auto h-[60%] px-2">
+                <div className="flex flex-col gap-3 mt-4 overflow-y-scroll h-[70%] px-2">
                     <div className="w-[100%] flex flex-col gap-3 items-center justify-center">
                         {serviceCalls && serviceCalls.length > 0
                             ? serviceCalls.map((call) => (

@@ -523,7 +523,7 @@ export const SideModalRight = ({ isOpen, item, onClose, metrics, connection }) =
           Detalhes
         </h1>
         <label className="flex items-center font-nunito-bold text-[#142937]">
-          Tipo de chamado:
+          Tipo de chamado:&nbsp;
           <select
             value={detailedItem.serviceTypeId}
             onChange={(txt) =>
@@ -532,7 +532,7 @@ export const SideModalRight = ({ isOpen, item, onClose, metrics, connection }) =
                 serviceTypeId: txt.target.value,
               })
             }
-            className="font-nunito-light"
+            className="font-nunito-light bg-[#FAFAFA]"
           >
             <option value={0}>Instalação</option>
             <option value={1}>Manutenção</option>
@@ -551,7 +551,7 @@ export const SideModalRight = ({ isOpen, item, onClose, metrics, connection }) =
           />
         </label>
         <label className="flex items-center font-nunito-bold text-[#142937]">
-          Nível de prioridade:
+          Nível de prioridade:&nbsp;
           <select
             value={detailedItem.urgencyStatusId}
             onChange={(txt) =>
@@ -560,7 +560,7 @@ export const SideModalRight = ({ isOpen, item, onClose, metrics, connection }) =
                 urgencyStatusId: txt.target.value,
               })
             }
-            className="font-nunito-light ml-1 text-[#142937]"
+            className="font-nunito-light ml-1 text-[#142937] bg-[#FAFAFA]"
           >
             <option value={0}>Não Urgente</option>
             <option value={1}>Pouco Urgente</option>

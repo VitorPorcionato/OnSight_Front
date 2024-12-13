@@ -75,32 +75,41 @@ const UserManagement = () => {
         </div>
 
         {/* Botões de filtro */}
-        <div className="w-full md:w-[75%] bg-white rounded-lg shadow-lg p-6 mt-4 flex flex-col md:flex-row justify-between items-start md:items-center mb-4 space-y-4 md:space-y-0">
-          <div className="flex flex-col md:flex-row items-start md:items-end w-full md:w-[100%] md:justify-around space-y-4 md:space-x-4">
+        <div className="w-full md:w-[75%] bg-white rounded-lg shadow-lg p-6 mt-4 flex flex-col md:flex-row justify-between items-center md:items-center mb-4 space-y-4 md:space-y-0">
+          {/* <div className="flex flex-col md:flex-row items-start md:items-center w-full md:w-[100%] md:justify-around space-y-4 md:space-x-4"> */}
+          <div className="flex flex-col md:flex-row w-full justify-around gap-4 md:gap-0">
             <button
-              className="flex items-center gap-1 text-[#142937]/80 hover:text-[#03558c]"
+              className="flex items-center gap-2 text-[#142937]/80 hover:text-[#03558c]"
               onClick={() => setSelectedType(0)}
             >
               <FaUserShield size={20} />
               <TextTypeUser>Administradores</TextTypeUser>
             </button>
+            
             <div className="border-l border-gray-300 h-6 mx-4 hidden md:block" />
+
             <button
-              className="text-[#142937]/80 hover:text-[#03558c] flex gap-1 items-center"
+              className="flex items-center gap-2 text-[#142937]/80 hover:text-[#03558c]"
               onClick={() => setSelectedType(1)}
             >
-              <FaUser size={16} /> <TextTypeUser>Atendentes</TextTypeUser>
+              <FaUser size={16} />
+              <TextTypeUser>Atendentes</TextTypeUser>
             </button>
+
             <div className="border-l border-gray-300 h-6 mx-4 hidden md:block" />
+
             <button
-              className="text-[#142937]/80 hover:text-[#03558c] flex gap-1 items-center"
+              className="flex items-center gap-2 text-[#142937]/80 hover:text-[#03558c]"
               onClick={() => setSelectedType(2)}
             >
-              <FaUserCog size={20} /> <TextTypeUser>Técnicos</TextTypeUser>
+              <FaUserCog size={20} />
+              <TextTypeUser>Técnicos</TextTypeUser>
             </button>
+
             <div className="border-l border-gray-300 h-6 mx-4 hidden md:block" />
+
             <button
-              className="text-[#142937]/80 hover:text-[#03558c] flex gap-1 items-center"
+              className="flex items-center gap-2 text-[#142937]/80 hover:text-[#03558c]a xl:mr-6"
               onClick={() => setSelectedType(3)}
             >
               <FaUserTie size={17} />

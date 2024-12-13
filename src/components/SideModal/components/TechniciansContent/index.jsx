@@ -75,7 +75,7 @@ export default function TechniciansContent({ handleCardSelection }) {
                         onSearch={setSearchedText}
                     />
                 </div>
-                <div className="flex flex-col gap-3 mt-4 overflow-y-auto h-full px-2">
+                <div className="flex flex-col gap-3 mt-4 overflow-y-scroll h-[70%] px-2">
                     <div className="w-[100%] flex flex-col gap-3 items-center justify-center mt-8">
                         { technicians && technicians.length > 0
                             ? technicians.map((technician) => (
